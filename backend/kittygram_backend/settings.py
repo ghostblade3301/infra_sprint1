@@ -6,10 +6,9 @@ from pathlib import Path
 load_dotenv()
 
 
-DJANGO_KEY = os.getenv('DJANGO_KEY')
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = DJANGO_KEY
+SECRET_KEY = os.getenv('DJANGO_KEY')
 
 DEBUG = True
 
